@@ -1,0 +1,22 @@
+uuid: 6c629d52-bbe2-46d9-ae00-f10685d4fed0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cluster_research_body
+    - node.type.research_cluster
+  module:
+    - text
+id: node.research_cluster.field_cluster_research_body
+field_name: field_cluster_research_body
+entity_type: node
+bundle: research_cluster
+label: 'Research Body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

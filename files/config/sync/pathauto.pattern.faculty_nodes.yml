@@ -1,0 +1,23 @@
+uuid: a3db3a42-c922-48ae-8400-c5a8c98faca3
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - node
+id: faculty_nodes
+label: 'Faculty Default Path'
+type: 'canonical_entities:node'
+pattern: 'faculty/[node:title]'
+selection_criteria:
+  9ea10be1-0a10-424e-9e62-98790d3fd8cf:
+    id: 'entity_bundle:node'
+    bundles:
+      faculty: faculty
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 9ea10be1-0a10-424e-9e62-98790d3fd8cf
+selection_logic: and
+weight: -5
+context_definitions: {  }

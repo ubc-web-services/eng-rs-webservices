@@ -1,0 +1,19 @@
+uuid: f90bdeb4-01f8-46e5-8159-89291c071c47
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_cluster_research_body
+field_name: field_cluster_research_body
+entity_type: node
+type: text_with_summary
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

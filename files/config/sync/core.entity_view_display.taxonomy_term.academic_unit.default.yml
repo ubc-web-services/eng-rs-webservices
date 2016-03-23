@@ -1,0 +1,38 @@
+uuid: ad8871d0-3682-4c7b-8643-67f44570b7d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.academic_unit
+  module:
+    - ds
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      path: sites/engineering.ubc.ca.dd/modules/contrib/ds
+      library: ''
+      disable_css: false
+      settings:
+        classes: {  }
+        wrappers: {  }
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+    regions:
+      ds_content:
+        - description
+id: taxonomy_term.academic_unit.default
+targetEntityType: taxonomy_term
+bundle: academic_unit
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

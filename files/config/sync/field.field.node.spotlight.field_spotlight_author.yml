@@ -1,0 +1,19 @@
+uuid: ca5fecd6-5269-4f2c-a200-d317e19ede87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_spotlight_author
+    - node.type.spotlight
+id: node.spotlight.field_spotlight_author
+field_name: field_spotlight_author
+entity_type: node
+bundle: spotlight
+label: Author
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

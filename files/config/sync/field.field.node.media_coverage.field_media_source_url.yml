@@ -1,0 +1,23 @@
+uuid: 3935f5a5-1fb3-40de-ac04-4ce4702dec6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media_source_url
+    - node.type.media_coverage
+  module:
+    - link
+id: node.media_coverage.field_media_source_url
+field_name: field_media_source_url
+entity_type: node
+bundle: media_coverage
+label: 'Source URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

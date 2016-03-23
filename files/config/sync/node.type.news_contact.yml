@@ -1,0 +1,18 @@
+uuid: 535ee7d4-8b5f-475e-b70e-1410ae87b851
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'News Contact'
+type: news_contact
+description: 'Add a NEWS CONTACT person for NEWS ARTICLEs'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

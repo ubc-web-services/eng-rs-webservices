@@ -1,0 +1,19 @@
+uuid: 0df20620-bdd5-4d7d-b400-c768a12f755d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cluster_research_vid_headr
+    - node.type.research_cluster
+id: node.research_cluster.field_cluster_research_vid_headr
+field_name: field_cluster_research_vid_headr
+entity_type: node
+bundle: research_cluster
+label: 'Research Video Header'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

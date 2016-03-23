@@ -1,0 +1,21 @@
+uuid: 3d40a950-ad10-43b9-a300-e45c432fe4ad
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_cluster_research_vid_headr
+field_name: field_cluster_research_vid_headr
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,11 @@
+id: media_coverage_source_title_link
+label: 'Media Coverage Source Title Linked to URL'
+ui_limit: ''
+properties:
+  content:
+    value: "<p><a href=\"[node:field_media_source_url]\" target=\"_blank\">[node:field_media_source_title]</a></p>\r\n"
+    format: full_html
+type: token
+type_label: 'Token field'
+entities:
+  node: node

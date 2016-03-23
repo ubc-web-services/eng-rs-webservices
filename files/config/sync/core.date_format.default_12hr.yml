@@ -1,0 +1,8 @@
+uuid: 05ab3036-34b7-47b8-8100-f06c5cc70725
+langcode: en
+status: true
+dependencies: {  }
+id: default_12hr
+label: 'Default 12HR'
+locked: false
+pattern: 'F j, Y g:i A'

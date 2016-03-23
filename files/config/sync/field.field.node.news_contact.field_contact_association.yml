@@ -1,0 +1,19 @@
+uuid: d672cbf9-cfa1-4ac6-b510-168d4d6d3ad6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_association
+    - node.type.news_contact
+id: node.news_contact.field_contact_association
+field_name: field_contact_association
+entity_type: node
+bundle: news_contact
+label: Association
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

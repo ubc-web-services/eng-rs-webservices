@@ -1,0 +1,23 @@
+uuid: c2d1d36b-7762-4330-9600-0c45c9f6e5af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_newsletter_more_info
+    - node.type.newsletter
+  module:
+    - link
+id: node.newsletter.field_newsletter_more_info
+field_name: field_newsletter_more_info
+entity_type: node
+bundle: newsletter
+label: 'More Information'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,111 @@
+uuid: 548ad6a1-3384-46ce-a71b-27344b03a7e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.spotlight.body
+    - field.field.node.spotlight.field_spotlight_author
+    - field.field.node.spotlight.field_spotlight_featured_caption
+    - field.field.node.spotlight.field_spotlight_image
+    - field.field.node.spotlight.field_spotlight_image_caption
+    - field.field.node.spotlight.field_spotlight_quote
+    - field.field.node.spotlight.field_spotlight_reprinted_from
+    - field.field.node.spotlight.field_spotlight_subtitle
+    - field.field.node.spotlight.field_spotlight_tags
+    - field.field.node.spotlight.field_spotlight_type
+    - field.field.node.spotlight.field_spotlight_url_to_link_to
+    - node.type.spotlight
+  module:
+    - image
+    - link
+    - options
+    - text
+    - user
+id: node.spotlight.default
+targetEntityType: node
+bundle: spotlight
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_spotlight_author:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_spotlight_featured_caption:
+    weight: 109
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_spotlight_image:
+    weight: 110
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_spotlight_image_caption:
+    weight: 111
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_spotlight_quote:
+    weight: 107
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_spotlight_reprinted_from:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_spotlight_subtitle:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_spotlight_tags:
+    weight: 112
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_spotlight_type:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_spotlight_url_to_link_to:
+    weight: 105
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  links:
+    weight: 100
+hidden: {  }

@@ -1,0 +1,39 @@
+uuid: af8f2020-4868-4fb3-b533-51aacaaa2bb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.faculty.field_fac_academic_rank
+    - field.field.node.faculty.field_fac_academic_unit
+    - field.field.node.faculty.field_fac_approved
+    - field.field.node.faculty.field_fac_areas_of_research
+    - field.field.node.faculty.field_fac_biography
+    - field.field.node.faculty.field_fac_expert_topics
+    - field.field.node.faculty.field_fac_first_name
+    - field.field.node.faculty.field_fac_image
+    - field.field.node.faculty.field_fac_last_name
+    - field.field.node.faculty.field_fac_other_languages
+    - field.field.node.faculty.field_fac_profile_page
+    - node.type.faculty
+  module:
+    - user
+id: node.faculty.teaser
+targetEntityType: node
+bundle: faculty
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_fac_academic_rank: true
+  field_fac_academic_unit: true
+  field_fac_approved: true
+  field_fac_areas_of_research: true
+  field_fac_biography: true
+  field_fac_expert_topics: true
+  field_fac_first_name: true
+  field_fac_image: true
+  field_fac_last_name: true
+  field_fac_other_languages: true
+  field_fac_profile_page: true

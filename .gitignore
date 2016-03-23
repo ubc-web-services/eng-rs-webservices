@@ -1,0 +1,7 @@
+settings*.php
+
+private
+
+!files
+files/*
+!files/config/

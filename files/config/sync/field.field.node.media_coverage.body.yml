@@ -1,0 +1,22 @@
+uuid: 0a7daeab-50ee-454e-9517-239c7b2c869e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.media_coverage
+  module:
+    - text
+id: node.media_coverage.body
+field_name: body
+entity_type: node
+bundle: media_coverage
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

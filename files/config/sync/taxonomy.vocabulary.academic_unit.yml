@@ -1,0 +1,9 @@
+uuid: b464e718-053b-4725-962c-4421d4fb3b3c
+langcode: en
+status: true
+dependencies: {  }
+name: 'Academic Unit'
+vid: academic_unit
+description: ''
+hierarchy: 0
+weight: 0

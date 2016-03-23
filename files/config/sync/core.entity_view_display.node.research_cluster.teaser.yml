@@ -1,0 +1,21 @@
+uuid: d4c590c4-5e43-43c9-8a00-a35b6d0b9a38
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.research_cluster.field_cluster_research_body
+    - field.field.node.research_cluster.field_cluster_research_header
+    - node.type.research_cluster
+  module:
+    - user
+id: node.research_cluster.teaser
+targetEntityType: node
+bundle: research_cluster
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_cluster_research_body: true
+  field_cluster_research_header: true

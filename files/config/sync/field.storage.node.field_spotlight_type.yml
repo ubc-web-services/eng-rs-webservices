@@ -1,0 +1,36 @@
+uuid: 7090c1c8-1e1c-42c7-a907-7f5c34db1135
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_spotlight_type
+field_name: field_spotlight_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Alumni
+      label: Alumni
+    -
+      value: Giving
+      label: Giving
+    -
+      value: Research
+      label: Research
+    -
+      value: Reunions
+      label: Reunions
+    -
+      value: Students
+      label: Students
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

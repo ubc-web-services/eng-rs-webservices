@@ -1,0 +1,40 @@
+uuid: ee1f8dc9-7483-462e-8a5e-947443912910
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.event.body
+    - field.field.node.event.field_evnt_alumni_industry_night
+    - field.field.node.event.field_evnt_end_date
+    - field.field.node.event.field_evnt_image
+    - field.field.node.event.field_evnt_location
+    - field.field.node.event.field_evnt_map_address
+    - field.field.node.event.field_evnt_private_event
+    - field.field.node.event.field_evnt_start_date
+    - node.type.event
+  module:
+    - text
+    - user
+id: node.event.teaser
+targetEntityType: node
+bundle: event
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_evnt_alumni_industry_night: true
+  field_evnt_end_date: true
+  field_evnt_image: true
+  field_evnt_location: true
+  field_evnt_map_address: true
+  field_evnt_private_event: true
+  field_evnt_start_date: true

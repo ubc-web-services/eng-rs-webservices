@@ -1,0 +1,21 @@
+uuid: 00ea7029-4641-48fa-8700-a52cbb8c5215
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fac_areas_of_research
+    - node.type.faculty
+  module:
+    - text
+id: node.faculty.field_fac_areas_of_research
+field_name: field_fac_areas_of_research
+entity_type: node
+bundle: faculty
+label: 'Areas of Research'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

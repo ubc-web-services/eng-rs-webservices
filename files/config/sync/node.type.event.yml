@@ -1,0 +1,18 @@
+uuid: 66a1a473-426c-4141-9b07-7cbf678f0cc5
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Event
+type: event
+description: 'Add an ENG-related EVENT to the calendar'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

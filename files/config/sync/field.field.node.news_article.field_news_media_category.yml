@@ -1,0 +1,21 @@
+uuid: 5be43949-0bf2-428e-a000-ff50c88fe736
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news_media_category
+    - node.type.news_article
+  module:
+    - options
+id: node.news_article.field_news_media_category
+field_name: field_news_media_category
+entity_type: node
+bundle: news_article
+label: 'Media Category'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

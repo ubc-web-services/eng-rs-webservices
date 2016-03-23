@@ -1,0 +1,23 @@
+uuid: 51345a1c-6cf1-4315-8f00-c95876a47afe
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - node
+id: news_contact_default_path
+label: 'News Contact Default Path'
+type: 'canonical_entities:node'
+pattern: 'contact/[node:title]'
+selection_criteria:
+  071b75d7-0e01-47b0-ad36-542fb08cacdf:
+    id: 'entity_bundle:node'
+    bundles:
+      news_contact: news_contact
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 071b75d7-0e01-47b0-ad36-542fb08cacdf
+selection_logic: and
+weight: -5
+context_definitions: {  }

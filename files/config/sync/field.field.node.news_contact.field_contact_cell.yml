@@ -1,0 +1,21 @@
+uuid: 69775e55-d5cd-4504-a805-5d9309fd7ef3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_cell
+    - node.type.news_contact
+  module:
+    - telephone
+id: node.news_contact.field_contact_cell
+field_name: field_contact_cell
+entity_type: node
+bundle: news_contact
+label: Cell
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

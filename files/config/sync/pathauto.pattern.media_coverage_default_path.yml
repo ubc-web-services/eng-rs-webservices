@@ -1,0 +1,23 @@
+uuid: 32938840-2705-485d-9600-c4ec82481d09
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - node
+id: media_coverage_default_path
+label: 'Media Coverage Default Path'
+type: 'canonical_entities:node'
+pattern: 'in-the-news/[node:field_media_source_post_date]/[node:title]'
+selection_criteria:
+  b7f04e85-c749-4063-b300-fdcb7ccc70b4:
+    id: 'entity_bundle:node'
+    bundles:
+      media_coverage: media_coverage
+    negate: false
+    context_mapping:
+      node: node
+    uuid: b7f04e85-c749-4063-b300-fdcb7ccc70b4
+selection_logic: and
+weight: -5
+context_definitions: {  }

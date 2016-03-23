@@ -1,0 +1,19 @@
+uuid: ae06795f-0a4a-4ce8-9300-b7f899f73154
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_evnt_map_address
+    - node.type.event
+id: node.event.field_evnt_map_address
+field_name: field_evnt_map_address
+entity_type: node
+bundle: event
+label: 'Map Address'
+description: "Enter an address to be displayed as a Google Map.<br>\r\nEg. 2332 Main Mall, Vancouver BC"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,145 @@
+uuid: eec7ee29-fa3b-4396-913d-619237f265ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.faculty.field_fac_academic_rank
+    - field.field.node.faculty.field_fac_academic_unit
+    - field.field.node.faculty.field_fac_approved
+    - field.field.node.faculty.field_fac_areas_of_research
+    - field.field.node.faculty.field_fac_biography
+    - field.field.node.faculty.field_fac_expert_topics
+    - field.field.node.faculty.field_fac_first_name
+    - field.field.node.faculty.field_fac_image
+    - field.field.node.faculty.field_fac_last_name
+    - field.field.node.faculty.field_fac_other_languages
+    - field.field.node.faculty.field_fac_profile_page
+    - node.type.faculty
+  module:
+    - ds
+    - image
+    - link
+    - options
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      path: sites/engineering.ubc.ca.dd/modules/contrib/ds
+      library: ''
+      disable_css: false
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - 'dynamic_token_field:node-faculty_full_name'
+        - field_fac_image
+        - field_fac_academic_rank
+        - field_fac_academic_unit
+        - field_fac_biography
+        - field_fac_profile_page
+    fields:
+      'dynamic_token_field:node-faculty_full_name':
+        plugin_id: 'dynamic_token_field:node-faculty_full_name'
+        weight: 0
+        label: hidden
+        formatter: default
+id: node.faculty.default
+targetEntityType: node
+bundle: faculty
+mode: default
+content:
+  field_fac_academic_rank:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_fac_academic_unit:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_fac_approved:
+    weight: 17
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  field_fac_areas_of_research:
+    weight: 18
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_fac_biography:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_fac_expert_topics:
+    weight: 19
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_fac_first_name:
+    weight: 15
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_fac_image:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_fac_last_name:
+    weight: 16
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_fac_other_languages:
+    weight: 20
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_fac_profile_page:
+    weight: 5
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  links:
+    weight: 14
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

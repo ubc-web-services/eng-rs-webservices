@@ -1,0 +1,27 @@
+uuid: 2b691dce-2d40-4be5-931c-28b0368dd7e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.storage.node.field_cluster_spotlight_stories
+    - node.type.research_cluster
+id: node.research_cluster.field_cluster_spotlight_stories
+field_name: field_cluster_spotlight_stories
+entity_type: node
+bundle: research_cluster
+label: 'Spotlight Stories'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      basic: basic
+    sort:
+      field: id
+      direction: ASC
+field_type: entity_reference

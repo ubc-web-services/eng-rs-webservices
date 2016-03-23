@@ -1,0 +1,27 @@
+uuid: 78838121-9645-4516-b000-d9eeaaa21857
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fac_academic_unit
+    - node.type.faculty
+    - taxonomy.vocabulary.academic_unit
+id: node.faculty.field_fac_academic_unit
+field_name: field_fac_academic_unit
+entity_type: node
+bundle: faculty
+label: 'Academic Unit'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      academic_unit: academic_unit
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

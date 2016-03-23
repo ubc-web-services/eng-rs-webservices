@@ -1,0 +1,8 @@
+uuid: 2b5b8e16-10ed-4115-b127-395234f42017
+langcode: en
+status: true
+dependencies: {  }
+id: event_yy_mm
+label: 'Event YY/MM'
+locked: false
+pattern: y/m

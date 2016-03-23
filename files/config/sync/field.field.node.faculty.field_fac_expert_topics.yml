@@ -1,0 +1,27 @@
+uuid: 6fb4138b-cc20-4772-ab00-ea546fe753cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fac_expert_topics
+    - node.type.faculty
+    - taxonomy.vocabulary.expert_topics
+id: node.faculty.field_fac_expert_topics
+field_name: field_fac_expert_topics
+entity_type: node
+bundle: faculty
+label: 'Expert Topics'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      expert_topics: expert_topics
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

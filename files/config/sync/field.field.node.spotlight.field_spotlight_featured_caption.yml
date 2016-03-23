@@ -1,0 +1,19 @@
+uuid: 311b14c2-85f1-4e3c-8200-c398d1eea989
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_spotlight_featured_caption
+    - node.type.spotlight
+id: node.spotlight.field_spotlight_featured_caption
+field_name: field_spotlight_featured_caption
+entity_type: node
+bundle: spotlight
+label: 'Featured Caption'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

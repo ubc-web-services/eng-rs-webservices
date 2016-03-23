@@ -1,0 +1,10 @@
+uuid: ff23ce4a-d71b-48e0-a104-4e262bb0b726
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.academic_unit_abbreviation
+label: 'Academic Unit Abbreviation'
+targetEntityType: taxonomy_term
+cache: true

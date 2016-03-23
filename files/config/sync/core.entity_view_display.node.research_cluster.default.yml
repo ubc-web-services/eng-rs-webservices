@@ -1,0 +1,85 @@
+uuid: c8d417b2-e05d-4512-a205-5dc729eb1b2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.research_cluster.field_cluster_featured_image
+    - field.field.node.research_cluster.field_cluster_key_activities
+    - field.field.node.research_cluster.field_cluster_research_activity
+    - field.field.node.research_cluster.field_cluster_research_body
+    - field.field.node.research_cluster.field_cluster_research_header
+    - field.field.node.research_cluster.field_cluster_research_vid_headr
+    - field.field.node.research_cluster.field_cluster_research_video
+    - field.field.node.research_cluster.field_cluster_spotlight_stories
+    - node.type.research_cluster
+  module:
+    - image
+    - text
+    - user
+    - video_embed_field
+id: node.research_cluster.default
+targetEntityType: node
+bundle: research_cluster
+mode: default
+content:
+  field_cluster_featured_image:
+    weight: 109
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_cluster_key_activities:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_cluster_research_activity:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_cluster_research_body:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_cluster_research_header:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_cluster_research_vid_headr:
+    weight: 107
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_cluster_research_video:
+    weight: 108
+    label: above
+    settings:
+      responsive: false
+      width: '854'
+      height: '480'
+      autoplay: true
+    third_party_settings: {  }
+    type: video_embed_field_video
+  field_cluster_spotlight_stories:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 100
+hidden: {  }

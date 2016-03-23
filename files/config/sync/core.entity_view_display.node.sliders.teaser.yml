@@ -1,0 +1,23 @@
+uuid: e90b0345-12a6-4af3-a909-9f447de61163
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sliders.field_slider_caption
+    - field.field.node.sliders.field_slider_image
+    - field.field.node.sliders.field_slider_link
+    - node.type.sliders
+  module:
+    - user
+id: node.sliders.teaser
+targetEntityType: node
+bundle: sliders
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_slider_caption: true
+  field_slider_image: true
+  field_slider_link: true

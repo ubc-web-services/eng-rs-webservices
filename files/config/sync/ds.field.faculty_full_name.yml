@@ -1,0 +1,11 @@
+id: faculty_full_name
+label: 'Faculty Full Name'
+ui_limit: ''
+properties:
+  content:
+    value: '[node:field_fac_first_name] [node:field_fac_last_name]'
+    format: plain_text
+type: token
+type_label: 'Token field'
+entities:
+  node: node

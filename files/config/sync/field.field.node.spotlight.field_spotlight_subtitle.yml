@@ -1,0 +1,19 @@
+uuid: 491db61e-dd8a-4229-ac00-fa8a2d7e7027
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_spotlight_subtitle
+    - node.type.spotlight
+id: node.spotlight.field_spotlight_subtitle
+field_name: field_spotlight_subtitle
+entity_type: node
+bundle: spotlight
+label: Subtitle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

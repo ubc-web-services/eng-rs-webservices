@@ -1,0 +1,18 @@
+uuid: be5c340c-c86b-4bc4-b100-f82d328de01a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Media Coverage'
+type: media_coverage
+description: 'Use this to summarize and link to ENG-related coverage posted IN THE NEWS external to this site.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

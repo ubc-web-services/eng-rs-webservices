@@ -1,0 +1,89 @@
+uuid: 9c378a5f-6fc8-4284-9305-5e6a229f3c8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news_contact.field_contact_association
+    - field.field.node.news_contact.field_contact_cell
+    - field.field.node.news_contact.field_contact_email
+    - field.field.node.news_contact.field_contact_full_name
+    - field.field.node.news_contact.field_contact_phone
+    - node.type.news_contact
+  module:
+    - path
+    - telephone
+id: node.news_contact.default
+targetEntityType: node
+bundle: news_contact
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+  field_contact_association:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_contact_cell:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+  field_contact_email:
+    weight: 5
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+  field_contact_full_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_contact_phone:
+    weight: 3
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+  path:
+    type: path
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 9
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

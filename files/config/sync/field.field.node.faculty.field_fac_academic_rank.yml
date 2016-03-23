@@ -1,0 +1,21 @@
+uuid: dc1f5f3f-af8d-4961-8e5e-946b9d7f0b89
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fac_academic_rank
+    - node.type.faculty
+  module:
+    - options
+id: node.faculty.field_fac_academic_rank
+field_name: field_fac_academic_rank
+entity_type: node
+bundle: faculty
+label: 'Academic Rank'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,9 @@
+uuid: 7cccbe29-b7cc-448d-9762-9842d0c0e8ac
+langcode: en
+status: true
+dependencies: {  }
+name: 'Research Cluster'
+vid: research_cluster
+description: ''
+hierarchy: 0
+weight: 0

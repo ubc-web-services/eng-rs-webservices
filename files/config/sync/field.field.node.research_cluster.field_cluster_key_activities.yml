@@ -1,0 +1,22 @@
+uuid: 19aa9af2-53e6-4678-9100-c2c60629d44d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cluster_key_activities
+    - node.type.research_cluster
+  module:
+    - text
+id: node.research_cluster.field_cluster_key_activities
+field_name: field_cluster_key_activities
+entity_type: node
+bundle: research_cluster
+label: 'Key Activities'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

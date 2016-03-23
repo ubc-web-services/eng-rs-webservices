@@ -1,0 +1,23 @@
+uuid: 2ddfb7fa-8c58-4e4e-8848-7222b3c38d00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fac_approved
+    - node.type.faculty
+id: node.faculty.field_fac_approved
+field_name: field_fac_approved
+entity_type: node
+bundle: faculty
+label: Approved
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Is Approved'
+  off_label: 'No'
+field_type: boolean

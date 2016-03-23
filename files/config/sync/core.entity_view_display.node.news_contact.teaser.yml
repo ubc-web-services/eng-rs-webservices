@@ -1,0 +1,19 @@
+uuid: a4522dd7-bd88-47e6-9400-f5aeba20a345
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.news_contact.field_contact_full_name
+    - node.type.news_contact
+  module:
+    - user
+id: node.news_contact.teaser
+targetEntityType: node
+bundle: news_contact
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_contact_full_name: true

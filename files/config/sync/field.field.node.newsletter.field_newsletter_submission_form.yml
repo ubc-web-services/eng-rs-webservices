@@ -1,0 +1,23 @@
+uuid: f0475ee3-aa4f-40e0-983e-622f7d23e65e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_newsletter_submission_form
+    - node.type.newsletter
+  module:
+    - link
+id: node.newsletter.field_newsletter_submission_form
+field_name: field_newsletter_submission_form
+entity_type: node
+bundle: newsletter
+label: 'Submission Form'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,53 @@
+uuid: a6fe11d4-a6e2-453f-b909-9deeae801d28
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news_contact.field_contact_association
+    - field.field.node.news_contact.field_contact_cell
+    - field.field.node.news_contact.field_contact_email
+    - field.field.node.news_contact.field_contact_full_name
+    - field.field.node.news_contact.field_contact_phone
+    - node.type.news_contact
+  module:
+    - user
+id: node.news_contact.default
+targetEntityType: node
+bundle: news_contact
+mode: default
+content:
+  field_contact_association:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_contact_cell:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_contact_email:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_contact_full_name:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_contact_phone:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  links:
+    weight: 100
+hidden: {  }

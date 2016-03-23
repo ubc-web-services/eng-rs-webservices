@@ -1,0 +1,10 @@
+uuid: ee168f20-18ed-4eb4-ba00-d703057e5e0f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.news_feature
+label: 'News Feature'
+targetEntityType: node
+cache: true

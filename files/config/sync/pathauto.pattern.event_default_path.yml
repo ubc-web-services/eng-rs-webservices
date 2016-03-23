@@ -1,0 +1,23 @@
+uuid: 46c242b2-4017-4067-ae00-0f73e8a51ae7
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - node
+id: event_default_path
+label: 'Event Default Path'
+type: 'canonical_entities:node'
+pattern: 'event/[node:field_evnt_start_date]/[node:title]'
+selection_criteria:
+  d64723e1-cbdd-4954-9423-35d30296e86c:
+    id: 'entity_bundle:node'
+    bundles:
+      event: event
+    negate: false
+    context_mapping:
+      node: node
+    uuid: d64723e1-cbdd-4954-9423-35d30296e86c
+selection_logic: and
+weight: -5
+context_definitions: {  }

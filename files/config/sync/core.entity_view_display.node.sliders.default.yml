@@ -1,0 +1,47 @@
+uuid: eca4e6f9-ae0a-46fa-9e03-3f3fd318d5eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.sliders.field_slider_caption
+    - field.field.node.sliders.field_slider_image
+    - field.field.node.sliders.field_slider_link
+    - node.type.sliders
+  module:
+    - image
+    - link
+    - user
+id: node.sliders.default
+targetEntityType: node
+bundle: sliders
+mode: default
+content:
+  field_slider_caption:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_slider_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_slider_link:
+    weight: 104
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  links:
+    weight: 100
+hidden: {  }

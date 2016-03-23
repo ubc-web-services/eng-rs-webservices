@@ -1,0 +1,17 @@
+uuid: c347d83b-4cae-4eef-802d-45645290afbf
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Sliders
+type: sliders
+description: 'The sliders for the homepage'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

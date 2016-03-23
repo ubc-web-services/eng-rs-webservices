@@ -1,0 +1,18 @@
+uuid: b9e2fbc1-27aa-4ab7-9200-fe8d8ff18513
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_evnt_private_event
+field_name: field_evnt_private_event
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

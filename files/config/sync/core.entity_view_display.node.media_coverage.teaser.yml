@@ -1,0 +1,36 @@
+uuid: c275002d-87fd-40a3-9600-b1d13b29ed69
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.media_coverage.body
+    - field.field.node.media_coverage.field_media_source
+    - field.field.node.media_coverage.field_media_source_post_date
+    - field.field.node.media_coverage.field_media_source_title
+    - field.field.node.media_coverage.field_media_source_url
+    - field.field.node.media_coverage.field_media_tags
+    - node.type.media_coverage
+  module:
+    - text
+    - user
+id: node.media_coverage.teaser
+targetEntityType: node
+bundle: media_coverage
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_media_source: true
+  field_media_source_post_date: true
+  field_media_source_title: true
+  field_media_source_url: true
+  field_media_tags: true

@@ -1,0 +1,19 @@
+uuid: 22e0fb3a-c763-4ac2-b400-fbc2d019d57a
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_spotlight_url_to_link_to
+field_name: field_spotlight_url_to_link_to
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

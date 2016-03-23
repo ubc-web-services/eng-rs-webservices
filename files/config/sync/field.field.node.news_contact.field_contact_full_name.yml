@@ -1,0 +1,19 @@
+uuid: 95ef775b-2c56-4c5e-a559-89fcfebbad16
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contact_full_name
+    - node.type.news_contact
+id: node.news_contact.field_contact_full_name
+field_name: field_contact_full_name
+entity_type: node
+bundle: news_contact
+label: 'Full Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

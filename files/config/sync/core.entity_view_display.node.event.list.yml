@@ -1,0 +1,133 @@
+uuid: db2b6b73-cd5c-4bb6-a100-ca4c9613f6d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.list
+    - field.field.node.event.body
+    - field.field.node.event.field_evnt_alumni_industry_night
+    - field.field.node.event.field_evnt_end_date
+    - field.field.node.event.field_evnt_image
+    - field.field.node.event.field_evnt_location
+    - field.field.node.event.field_evnt_map_address
+    - field.field.node.event.field_evnt_private_event
+    - field.field.node.event.field_evnt_start_date
+    - node.type.event
+  module:
+    - datetime
+    - ds
+    - image
+    - simple_gmap
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      path: sites/engineering.ubc.ca.dd/modules/contrib/ds
+      library: ''
+      disable_css: false
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_evnt_start_date
+        - node_title
+        - field_evnt_location
+        - body
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+id: node.event.list
+targetEntityType: node
+bundle: event
+mode: list
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 3
+    settings:
+      trim_length: 200
+    third_party_settings: {  }
+  field_evnt_alumni_industry_night:
+    weight: 5
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  field_evnt_end_date:
+    weight: 7
+    label: above
+    settings:
+      timezone_override: ''
+      date_format: 'F jS, Y - g:i A'
+    third_party_settings: {  }
+    type: datetime_custom
+  field_evnt_image:
+    weight: 8
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_evnt_location:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_evnt_map_address:
+    weight: 9
+    label: above
+    settings:
+      include_map: '1'
+      include_static_map: '0'
+      include_link: '0'
+      include_text: '0'
+      iframe_height: '200'
+      iframe_width: '200'
+      zoom_level: '14'
+      information_bubble: '1'
+      link_text: 'View larger map'
+      map_type: m
+      langcode: en
+    third_party_settings: {  }
+    type: simple_gmap
+  field_evnt_private_event:
+    weight: 6
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  field_evnt_start_date:
+    weight: 0
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: d
+    third_party_settings: {  }
+    type: datetime_custom
+  links:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

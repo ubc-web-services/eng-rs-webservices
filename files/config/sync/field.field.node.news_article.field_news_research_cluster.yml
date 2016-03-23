@@ -1,0 +1,27 @@
+uuid: 3831739e-7ba5-44d6-8c07-7f6376883bc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news_research_cluster
+    - node.type.news_article
+    - taxonomy.vocabulary.research_cluster
+id: node.news_article.field_news_research_cluster
+field_name: field_news_research_cluster
+entity_type: node
+bundle: news_article
+label: 'Research Cluster'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      research_cluster: research_cluster
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

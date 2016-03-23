@@ -1,0 +1,19 @@
+uuid: 9c72f1b5-55fe-4431-8700-a100f6ad551a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cluster_research_header
+    - node.type.research_cluster
+id: node.research_cluster.field_cluster_research_header
+field_name: field_cluster_research_header
+entity_type: node
+bundle: research_cluster
+label: 'Research Header'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

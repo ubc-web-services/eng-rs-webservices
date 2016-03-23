@@ -1,0 +1,21 @@
+uuid: 4b151322-9c71-45b4-a649-736ee60214cd
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.token
+    - taxonomy.vocabulary.academic_unit
+  module:
+    - text
+id: taxonomy_term.academic_unit.token
+targetEntityType: taxonomy_term
+bundle: academic_unit
+mode: token
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,14 @@
+uuid: 8e377f4e-54f0-4a8a-ad05-5fb3e9547ab8
+name: Engineering
+mail: david.kennedy@ubc.ca
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/46
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
