@@ -5,6 +5,11 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.news_article.body
+    - field.field.node.news_article.field_news_caption
+    - field.field.node.news_article.field_news_featured_image
+    - field.field.node.news_article.field_news_media_category
+    - field.field.node.news_article.field_news_research_cluster
+    - field.field.node.news_article.field_news_tags
     - node.type.news_article
   module:
     - text
@@ -23,4 +28,9 @@ content:
     third_party_settings: {  }
   links:
     weight: 100
-hidden: {  }
+hidden:
+  field_news_caption: true
+  field_news_featured_image: true
+  field_news_media_category: true
+  field_news_research_cluster: true
+  field_news_tags: true

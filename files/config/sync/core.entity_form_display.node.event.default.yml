@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.event.field_evnt_map_address
     - field.field.node.event.field_evnt_private_event
     - field.field.node.event.field_evnt_start_date
+    - image.style.thumbnail
     - node.type.event
   module:
     - datetime

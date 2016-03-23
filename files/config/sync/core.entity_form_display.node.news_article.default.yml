@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.news_article.field_news_media_category
     - field.field.node.news_article.field_news_research_cluster
     - field.field.node.news_article.field_news_tags
+    - image.style.thumbnail
     - node.type.news_article
   module:
     - image

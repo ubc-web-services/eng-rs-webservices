@@ -5,6 +5,16 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.spotlight.body
+    - field.field.node.spotlight.field_spotlight_author
+    - field.field.node.spotlight.field_spotlight_featured_caption
+    - field.field.node.spotlight.field_spotlight_image
+    - field.field.node.spotlight.field_spotlight_image_caption
+    - field.field.node.spotlight.field_spotlight_quote
+    - field.field.node.spotlight.field_spotlight_reprinted_from
+    - field.field.node.spotlight.field_spotlight_subtitle
+    - field.field.node.spotlight.field_spotlight_tags
+    - field.field.node.spotlight.field_spotlight_type
+    - field.field.node.spotlight.field_spotlight_url_to_link_to
     - node.type.spotlight
   module:
     - text
@@ -23,4 +33,14 @@ content:
     third_party_settings: {  }
   links:
     weight: 100
-hidden: {  }
+hidden:
+  field_spotlight_author: true
+  field_spotlight_featured_caption: true
+  field_spotlight_image: true
+  field_spotlight_image_caption: true
+  field_spotlight_quote: true
+  field_spotlight_reprinted_from: true
+  field_spotlight_subtitle: true
+  field_spotlight_tags: true
+  field_spotlight_type: true
+  field_spotlight_url_to_link_to: true

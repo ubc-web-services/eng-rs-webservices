@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.sliders.field_slider_caption
     - field.field.node.sliders.field_slider_image
     - field.field.node.sliders.field_slider_link
+    - image.style.thumbnail
     - node.type.sliders
   module:
     - image

@@ -11,7 +11,7 @@ type: 'canonical_entities:node'
 pattern: 'in-the-news/[node:field_media_source_post_date]/[node:title]'
 selection_criteria:
   b7f04e85-c749-4063-b300-fdcb7ccc70b4:
-    id: 'entity_bundle:node'
+    id: node_type
     bundles:
       media_coverage: media_coverage
     negate: false
@@ -20,4 +20,4 @@ selection_criteria:
     uuid: b7f04e85-c749-4063-b300-fdcb7ccc70b4
 selection_logic: and
 weight: -5
-context_definitions: {  }
+relationships: {  }

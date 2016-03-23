@@ -4,8 +4,14 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.research_cluster.field_cluster_featured_image
+    - field.field.node.research_cluster.field_cluster_key_activities
+    - field.field.node.research_cluster.field_cluster_research_activity
     - field.field.node.research_cluster.field_cluster_research_body
     - field.field.node.research_cluster.field_cluster_research_header
+    - field.field.node.research_cluster.field_cluster_research_vid_headr
+    - field.field.node.research_cluster.field_cluster_research_video
+    - field.field.node.research_cluster.field_cluster_spotlight_stories
     - node.type.research_cluster
   module:
     - user
@@ -17,5 +23,11 @@ content:
   links:
     weight: 100
 hidden:
+  field_cluster_featured_image: true
+  field_cluster_key_activities: true
+  field_cluster_research_activity: true
   field_cluster_research_body: true
   field_cluster_research_header: true
+  field_cluster_research_vid_headr: true
+  field_cluster_research_video: true
+  field_cluster_spotlight_stories: true

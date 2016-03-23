@@ -39,6 +39,7 @@ content:
     weight: 5
     settings:
       placeholder: ''
+      size: 60
     third_party_settings: {  }
     type: email_default
   field_contact_full_name:

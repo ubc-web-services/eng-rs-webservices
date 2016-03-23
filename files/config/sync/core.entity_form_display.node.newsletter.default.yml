@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.newsletter.field_newsletter_past_issues
     - field.field.node.newsletter.field_newsletter_sub_link
     - field.field.node.newsletter.field_newsletter_submission_form
+    - image.style.thumbnail
     - node.type.newsletter
   module:
     - image

@@ -4,7 +4,11 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.news_contact.field_contact_association
+    - field.field.node.news_contact.field_contact_cell
+    - field.field.node.news_contact.field_contact_email
     - field.field.node.news_contact.field_contact_full_name
+    - field.field.node.news_contact.field_contact_phone
     - node.type.news_contact
   module:
     - user
@@ -16,4 +20,8 @@ content:
   links:
     weight: 100
 hidden:
+  field_contact_association: true
+  field_contact_cell: true
+  field_contact_email: true
   field_contact_full_name: true
+  field_contact_phone: true
